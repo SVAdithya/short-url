@@ -157,9 +157,6 @@ components:
         customAlias:
           type: string
           example: openai
-        expiresAt:
-          type: string
-          format: date-time
 
     UpdateShortUrlRequest:
       type: object
@@ -167,9 +164,6 @@ components:
         longUrl:
           type: string
           format: uri
-        expiresAt:
-          type: string
-          format: date-time
         enabled:
           type: boolean
 
