@@ -16,9 +16,7 @@ public class ShortUrlController  implements ShortUrlApi {
     public ResponseEntity<Void> redirect(String code){
         return ResponseEntity
                 .status(302)
-                .location(URI.create(
-                        shortUrlService.getOriginalUrl(code)
-                ))
+                .location(URI.create(shortUrlService.getOriginalUrl(code)))
                 .build();
     }
 }
